@@ -25,12 +25,13 @@ public class AppTest
 	private List<Integer> input;
 	private List<Integer> expectedCrescente;
 	private List<Integer> expectedDecrescente;
+	private ListOrdering listOrdering;
 	
 	public AppTest(List<Integer> input, List<Integer> expectedCrescente, List<Integer> expectedDecrescente) {
 		this.input = input;
 		this.expectedCrescente = expectedCrescente;
 		this.expectedDecrescente = expectedDecrescente;
-		
+		listOrdering = new ListOrdering();
 	}
 	
 	@BeforeClass
@@ -47,7 +48,6 @@ public class AppTest
     @Test
     public void sortWorks()
     {
-    	ListOrdering listOrdering = new ListOrdering();
     	assertEquals(expectedCrescente, listOrdering.sort(input, 0));
     	assertEquals(expectedDecrescente, listOrdering.sort(input, 1));
     	
