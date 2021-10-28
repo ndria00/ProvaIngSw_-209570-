@@ -31,18 +31,4 @@ public class ListOrdering {
 		}
 		return myList;
 	}
-	
-	/*
-	int min;
-	for(int i = 0; i < myList.size(); ++i) {
-		min = myList.get(0);
-		for(int j = 0; j < myList.size(); ++j) {
-			if(myList.get(j) < min)
-				min = myList.get(j);
-		}
-		
-		orderedList.add(min);
-		myList.remove(min);
-		
-	}*/
 }

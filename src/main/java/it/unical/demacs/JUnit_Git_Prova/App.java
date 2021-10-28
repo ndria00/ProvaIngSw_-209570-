@@ -1,8 +1,5 @@
 package it.unical.demacs.JUnit_Git_Prova;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Hello world!
  *
@@ -11,6 +8,7 @@ public class App
 {
     public static void main( String[] args )
     {
+    	/*
     	List<Integer> myList = new ArrayList<Integer>();
     	myList.add(10);
     	myList.add(1);
@@ -23,6 +21,6 @@ public class App
         
         System.out.println(test.sort(myList, 0).toString());
         System.out.println(test.sort(myList, 1).toString());
-        
+        */
     }
 }
